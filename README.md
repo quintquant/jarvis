@@ -1,8 +1,10 @@
 # jarvis
- 
-Software to carry out Principal Component Analysis (PCA) of experimental (or simulated) data. 
 
-This software was originally developed by Jorge Quintanilla as part of a collaboration involving Stuart Gibson, Robert Twyman, Gunnar Moller and Tymoteusz Tula, all at the University of Kent. For licensing information, see COPYING.
+Software to carry out Principal Component Analysis (PCA) of experimental (or simulated) data.
+
+This software was originally developed by Jorge Quintanilla as part of a collaboration involving Stuart Gibson, Robert Twyman, Gunnar Moller and Tymoteusz Tula, all at the University of Kent. For licensing information, see COPYING. You can cite this code using the following DOI:
+
+[![DOI](https://zenodo.org/badge/258258591.svg)](https://zenodo.org/badge/latestdoi/258258591)
 
 This software is optimised for Octave but can be easily adapted for use with Matlab.
 
@@ -18,11 +20,11 @@ USAGE
 
 Start Octave.
 
-Type the command 
+Type the command
 
  source "functions_PCA_current.m"
- 
-This will make available the following Octave functions: 
+
+This will make available the following Octave functions:
 
 PCA
 gen_A
