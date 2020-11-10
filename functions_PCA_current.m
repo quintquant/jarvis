@@ -10,6 +10,9 @@
 % The source code for each function documents
 % that function's input and output parameters.
 %
+% Additional comments explain how to adapt they
+% code for running on Matlab rather than Octave.
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%
@@ -87,7 +90,7 @@ function [X,U,S,scree_data]=PCA(A)
     %   here we are substracting the time-average of A(t) for a given
     %   temperature from the values of A(t) obtained at different times for
     %   that temperature.
-    X=A-ones(size(A)(1),1)*mean(A);
+    X=A-ones(size(A)(1),1)*mean(A); % MATLAB: X=A-ones(size(A,1),1)’*mean(A);
     % Singular value decomposition:
     [V,lambda,junk] = svd(X'*X);
     % Principal components:
