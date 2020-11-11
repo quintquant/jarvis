@@ -31,15 +31,5 @@
             "name": "Gunnar Moller"
         }
     ], 
-    "access_right": "open", 
-    "related_identifiers": [
-        {
-            "scheme": "url", 
-            "identifier": "https://github.com/quintquant/jarvis/tree/v0.0.0"
-        }, 
-        {
-            "scheme": "doi", 
-            "identifier": "10.5281/zenodo.4266743"
-        }
-    ]
+    "access_right": "open"
 }
