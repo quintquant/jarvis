@@ -2,7 +2,7 @@
 
 Software to carry out Principal Component Analysis (PCA) of experimental (or simulated) data.
 
-This software was originally developed by Jorge Quintanilla as part of two collaborations involving Stuart Gibson, Robert Twyman, Gunnar Moller and Tymoteusz Tula, all at the University of Kent. For licensing information, see COPYING. You can cite this code using the following DOI:
+This software was originally developed by Jorge Quintanilla as part of two collaborations involving Stuart Gibson, Robert Twyman, Dylan Barker, Gunnar Moller and Tymoteusz Tula. For licensing information, see COPYING. You can cite this code using the following DOI:
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4266743.svg)](https://doi.org/10.5281/zenodo.4266743)
 
