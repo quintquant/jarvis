@@ -4,7 +4,7 @@ Software to carry out Principal Component Analysis (PCA) of experimental (or sim
 
 This software was originally developed by Jorge Quintanilla as part of a collaboration involving Stuart Gibson, Robert Twyman, Gunnar Moller and Tymoteusz Tula, all at the University of Kent. For licensing information, see COPYING. You can cite this code using the following DOI:
 
-[![DOI](https://zenodo.org/badge/258258591.svg)](https://zenodo.org/badge/latestdoi/258258591)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4266744.svg)](https://doi.org/10.5281/zenodo.4266744)
 
 This software is optimised for Octave but can be easily adapted for use with Matlab.
 
