@@ -1,0 +1,47 @@
+{
+    "description": "<p>This is an initial release, with minimal capabilities.</p>", 
+    "license": "other-open", 
+    "title": "quintquant/jarvis: Initial release", 
+    "version": "v0.0.0", 
+    "upload_type": "software", 
+    "publication_date": "2020-11-10", 
+    "creators": [
+        {
+            "affiliation": "University of Kent", 
+            "name": "Jorge Quintanilla"
+        },
+        {
+            "affiliation": "University of Kent", 
+            "name": "Stuart Gibson"
+        },
+        {
+            "affiliation": "University of Kent", 
+            "name": "Robbie Twyman"
+        },
+        {
+            "affiliation": "University of Kent", 
+            "name": "Dylan Barker"
+        },
+        {
+            "affiliation": "University of Kent", 
+            "name": "Tymoteusz Tula"
+        },
+        {
+            "affiliation": "University of Kent", 
+            "name": "Gunnar Moller"
+        }
+    ], 
+    "access_right": "open", 
+    "related_identifiers": [
+        {
+            "scheme": "url", 
+            "identifier": "https://github.com/quintquant/jarvis/tree/v0.0.0", 
+            "relation": "isSupplementTo"
+        }, 
+        {
+            "scheme": "doi", 
+            "identifier": "10.5281/zenodo.4266743", 
+            "relation": "isVersionOf"
+        }
+    ]
+}
