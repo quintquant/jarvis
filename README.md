@@ -24,10 +24,12 @@ Start Octave.
 
 The following Octave functions will be available:
 
-PCA
-gen_A
-gen_image_matrix
-recons
-scores
+PCA, gen_A, gen_image_matrix, recons, scores
 
 The usage of each of these functions is documented in comments within its source code.
+
+TO DO
+
+Provide examples.
+
+Provide documentation.
