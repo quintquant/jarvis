@@ -94,7 +94,7 @@ function [X,U,S,scree_data]=PCA(A)
     % Singular value decomposition:
     [V,lambda,junk] = svd(X'*X);
     % Principal components:
-    U = X*V*lambda^(-.5);   % Eq 13 in Robbie Twyman's report
+    U = X*V*lambda^(-.5);
     % Principal component scores:
     S = U'*X;
     % Data for scree plot:
