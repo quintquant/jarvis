@@ -14,17 +14,15 @@ A working installation of Octave (the software has been tested on Octave 3.4.3; 
 
 INSTALLATION
 
-No installation required - just place the file functions_PCA_current.m in your working directory.
+Copy the .m files to your working directory.
 
 USAGE
 
+cd to your working directory.
+
 Start Octave.
 
-Type the command
-
- source "functions_PCA_current.m"
-
-This will make available the following Octave functions:
+The following Octave functions will be available:
 
 PCA
 gen_A
@@ -32,4 +30,4 @@ gen_image_matrix
 recons
 scores
 
-The usage of each of these functions is documented thorugh comments within its source code.
+The usage of each of these functions is documented in comments within its source code.
