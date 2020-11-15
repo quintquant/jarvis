@@ -30,9 +30,13 @@ The usage of each of these functions is documented in comments within its source
 
 ### Example
 
-The following example illustrates the use of the Octave functions in https://github.com/quintquant/jarvis to analyse data. We will use two-dimensional neutron scattering images as an example, but the data could be of any kind, e.g. a time series or a five-dimensional data set (say, temperature and pressure measured at each point in a volume).
+The following example illustrates the use of the Octave functions in https://github.com/quintquant/jarvis to analyse data. We will use two-dimensional neutron scattering images as an example, but the data could be of any kind, e.g. a time series or a five-dimensional data set (say, temperature and pressure measured at each point in a volume). We will start with 5 observations and show that they can be described efficiently by their two coordinates in a two-dimensional space defined by two principal components.
 
-For this example, the neutron scattering data will be simulated. To perform the simulation we will also need the Octave functions in https://github.com/quintquant/magneto. Unless otherwise specified, all displayed code is Octave code. We will assume that we are issuing commands within an Octave session with both sets of functions available to Octave.
+#### Generation of the simulated observation data
+
+For this example, the neutron scattering data will be simulated. To perform the simulation we will also need the Octave functions in https://github.com/quintquant/magneto.
+
+Unless otherwise specified, all displayed code is Octave code. We will assume that we are issuing commands within an Octave session with both sets of functions available to Octave.
 
 Let us start by setting the model parameters for the neutron scattering simulations. The model is described in detail in
 
@@ -133,6 +137,8 @@ gnuplot> set pm3d;unset surface;splot "tmp.dat" matrix
 ```
 ![Plot of scattering function](/EXAMPLE_PLOT.png)
 
+#### Princial component analysis of the simulated data
+
 Let us now Carry out the Principal Component Analysis (PCA) of the data we have generated:
 ```
 [X,U,S,scree_data]=PCA(A);
@@ -187,9 +193,9 @@ ans =  11.885
 octave:> sum(S(2,:).^2)
 ans =  0.030627
 ```
-This indeed coincides with the first two numbers obtained above. Note that the first variance is large because we did not re-center the data on the average across observations - therefore, the first principal component is essentially that average.
+This indeed coincides with the first two numbers obtained above.
 
-Our variances are defined as the squared deviations from the origin. Note that the first variance is very large. This is because we have not substracted the average over observations from our data, so that's just telling us that our data set is far away from the origin of coordinates. We could of course have carried out that substraction when we built the function A, but then the data we were working with would look quite different from the raw experimental data.
+Note that the first variance is large because we did not re-center the data on the average across observations - therefore, the first principal component is essentially that average. Our variances are defined as the squared deviations from the origin. We could of course have carried out the substraction when we built the matrix A, but then the data we would be working with would look quite different from the raw experimental data.
 
 The main reason PCA is useful for our data set is because of the rapid fall in variance. In our example, only the first two principal components matter. This means that we can reconstruct any observation quite accurately with just the first two principal components. The function `recons` will reconstruct the `X` matrix using a specified number of principal components. Let us do this using 1, 2, and 3 principal components and calculate the squared deviation from the original `X` matrix:
 ```
