@@ -131,7 +131,7 @@ octave:> save "tmp.dat" Am;
 ```
 gnuplot> set pm3d;unset surface;splot "tmp.dat" matrix
 ```
-![Plot of scattering function](EXAMPLE_PLOT.png)
+![Plot of scattering function](/EXAMPLE_PLOT.png)
 
 Let us now Carry out the Principal Component Analysis (PCA) of the data we have generated:
 ```
