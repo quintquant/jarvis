@@ -30,15 +30,10 @@ The usage of each of these functions is documented in comments within its source
 
 ### EXAMPLE
 
-The following example illustrates the use of the Octave functions in
-https://github.com/quintquant/jarvis
-to analyse data. We will use two-dimensional neutron scattering images as an example, but the data could be of any kind, e.g. a time series or a five-dimensional data set (say, temperature and pressure measured at each point in a volume). For this example, the neutron scattering data will be simulated. To perform the simualtion we will also need the Octave functions in
-https://github.com/quintquant/magneto
-Unless otherwise specified, all code will be assumed to be run from within an Octave session with both sets of functions available to Octave.
+The following example illustrates the use of the Octave functions in https://github.com/quintquant/jarvis to analyse data. We will use two-dimensional neutron scattering images as an example, but the data could be of any kind, e.g. a time series or a five-dimensional data set (say, temperature and pressure measured at each point in a volume). For this example, the neutron scattering data will be simulated. To perform the simualtion we will also need the Octave functions in https://github.com/quintquant/magneto. Unless otherwise specified, all code will be assumed to be run from within an Octave session with both sets of functions available to Octave.
 
-First, let us establish the parameters of the simulation. We will carry out 5 observations, that is, we will simulate 5 distinct neutron scattering functions. Let us store that number in a suitable variable:
-```num_obs=5;
-```
+First, let us establish the parameters of the simulation. We will carry out 5 observations, that is, we will simulate 5 distinct neutron scattering functions. Let us store that number in a suitable variable:```num_obs=5;```
+
 Let us now set the model parameters for the neutron scattering simulations. The model is described in detail in H. R. Irons *et al.*, *Phys. Rev. B* **96**, 224408 (2017), https://doi.org/10.1103/PhysRevB.96.224408. We will simulate a ring-shaped magnetic cluster with `N=2` atoms and anisotropic, nearest-neighbour magnetic interactions with parameters `Gamma=0.6` and `Delta=0.0`:
 ```N=2*ones(1,num_obs);
 Gamma=0.6*ones(1,num_obs);
