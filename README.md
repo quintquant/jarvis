@@ -157,7 +157,7 @@ X =
   -0.00481490  -0.00538818  -0.00062034  -0.00119535  -0.00754260
   ...
 ```
-The substraction of the average is equivalent to substracting a uniform background from each image.
+The substraction of the average is equivalent to substracting a uniform background from each image [in the case of *S*(**q**) considered here the average, taken in this way, should always have the same value according to a well-known sum rule - any variation is due to the finite grid and finite domain of integration].
 * `U` contains the principal components. The Mth column of `U` is the Mth principal component. The total number of principal components is the same as the number of observations. The principal components are given in order of increasing variance in the data set that they capture: U(:,1) is the PC capturing the greatest amount of variance in the data set, U(:,2) is the PC that is second best at capturing the variance in the data set, etc.
 * `S` gives the scores of the principal components. In our case it is a `5 x 5` (square) matrix. `S(i,j)` is the score of the jth observation on the ith principal component, i.e. the amplitude corresponding to the ith PC in the decomposition of the jth observation in principal components. Mathematically, `X(:,m) = U*S(:,m)` i.e.
 ```
