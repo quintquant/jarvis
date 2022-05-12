@@ -14,7 +14,7 @@ A working installation of Octave (the software has been tested on Octave 3.4.3; 
 
 ## Installation
 
-Copy the .m files to your working directory. 
+Copy the .m files to your working directory.
 
 (Alternatively, copy the .m files to a directory of your choice. In that case you need to use the addpath command within Octave to tell Octave where to look for the .m files.)  
 
@@ -147,7 +147,7 @@ Let us now Carry out the Principal Component Analysis (PCA) of the data we have 
 ```
 
 This has generated the following matrices:
-* `X` is the same as `A` except each observation has had its average substracted (we substract the average *along* the column, not *across* columns - which is not the same as other PCA implementations):
+* `X` is the same as `A` except each observation has had its average substracted (we substract the average *along* the column, not *across* columns - which is not the same as other PCA implementations - for the standard PCA analsysis, use functon PCA_std instead of PCA):
 ```
 octave:> X
 X =
