@@ -227,4 +227,5 @@ i.e. they define 5 points on a two-dimensional plane.
 ## To do
 
 * Make into a package.
-* Improve documentation.
+* Improve documentation (including providing a muon spin relaxation example)
+* Add a flag to select the form of averaging (over observations vs within each observation - currently only the latter is implemented)
